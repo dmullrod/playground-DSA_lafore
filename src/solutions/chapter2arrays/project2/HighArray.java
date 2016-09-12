@@ -1,4 +1,4 @@
-package dataStructures;
+package solutions.chapter2arrays.project2;
 
 class HighArray {
 	private long[] a;
@@ -49,4 +49,11 @@ class HighArray {
 		System.out.println(" ");
 	}
 
+	public long getMax(){
+		if(nElems == 0){
+			return -1;
+		}else{		
+			return a[nElems];
+		}
+	}
 }

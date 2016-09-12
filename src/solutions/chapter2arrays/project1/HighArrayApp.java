@@ -1,4 +1,4 @@
-package dataStructures;
+package solutions.chapter2arrays.project1;
 
 public class HighArrayApp {
 
@@ -30,6 +30,14 @@ public class HighArrayApp {
 		arr.delete(00);
 		arr.delete(55);
 		arr.delete(99);
+		
+		arr.display();
+		
+		if(arr.getMax() != 0){
+			System.out.println("Value of highest key: " + arr.getMax());
+		}else{
+			System.out.println("Array is empty(-1): " + arr.getMax());
+		}
 	}
 
 }
