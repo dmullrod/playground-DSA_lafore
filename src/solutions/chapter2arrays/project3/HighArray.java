@@ -1,4 +1,4 @@
-package solutions.chapter2arrays.project2;
+package solutions.chapter2arrays.project3;
 
 class HighArray {
 	private long[] a;

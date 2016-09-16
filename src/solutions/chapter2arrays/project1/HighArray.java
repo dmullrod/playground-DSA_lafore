@@ -53,7 +53,7 @@ class HighArray {
 		if(nElems == 0){
 			return -1;
 		}else{		
-			return a[nElems];
+			return a[nElems-1];
 		}
 	}
 }
