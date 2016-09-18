@@ -20,7 +20,7 @@ public class HighArrayApp {
 		
 		arr.display();
 		
-		int searchKey = 35;		
+		int searchKey = 35;
 		if(arr.find(searchKey)){
 			System.out.println("Found " + searchKey);
 		}else{
@@ -32,11 +32,15 @@ public class HighArrayApp {
 		arr.delete(99);
 		
 		arr.display();
+		
 		if(arr.getMax() != 0){
+			arr.display();
 			System.out.println("Value of highest key: " + arr.getMax());
+			arr.display();
 		}else{
-			System.out.println("Array is empty(-1): " + arr.getMax());
+			System.out.println("Array is empty(-1)");
 		}
+	
 	}
 
 }

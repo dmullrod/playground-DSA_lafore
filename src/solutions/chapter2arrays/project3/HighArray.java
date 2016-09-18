@@ -51,9 +51,12 @@ class HighArray {
 
 	public long getMax(){
 		if(nElems == 0){
-			return -1;			
+			return -1;
 		}else{
 			return a[nElems-1];
 		}
+	}	
+	public void removeMax(long value){
+		delete(value);
 	}
 }

@@ -49,11 +49,18 @@ class HighArray {
 		System.out.println(" ");
 	}
 
+	
+	//project2.2 asks to call removemax from getmax if array has >0 nElems
 	public long getMax(){
+		long val = a[nElems-1];
 		if(nElems == 0){
-			return -1;			
+			return -1;
 		}else{
+			removeMax(val);
 			return a[nElems-1];
 		}
+	}
+	public void removeMax(long value){
+		delete(value);
 	}
 }
