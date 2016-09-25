@@ -34,6 +34,50 @@ class OrdArray {
 			}
 		}
 	}
+	public void merge(OrdArray arr1, OrdArray arr2){
+		int i = 0;
+		int one = arr1.nElems -1;
+		int two = arr2.nElems -1;
+		
+		while(true){
+			if(one >= 0 && two >= 0){
+				if(arr1.a[i] < arr2.a[i]){
+					a[i] = arr1.a[i];
+					i++;
+					one--;
+					two--;
+					nElems++;
+				//handles > and ==
+				}else{
+					a[i] = arr2.a[i];
+					i++;
+					one--;
+					two--;
+					nElems++;
+				}
+			//if an array is 'empty'
+			//break if both are 'empty'
+			}else if(one < 0 || two < 0){
+				if(one < 0){
+					while(two >= 0){
+						a[i] = arr2.a[i];
+						i++;
+						two--;
+						nElems++;
+					}
+					break;
+				}else if(two < 0){
+					while(one >= 0){
+						a[i] = arr1.a[i];
+						i++;
+						one--;
+						nElems++;
+					}
+					break;
+				}
+			}
+		}
+	}
 	
 	public void insert(long value){
 		int lowerBound = 0;
